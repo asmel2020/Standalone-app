@@ -6,6 +6,6 @@ async function bootstrap() {
 
   const app = await NestFactory.createApplicationContext(AppModule);
   
-  //await app.close();
+  await app.init();
 }
 bootstrap();
